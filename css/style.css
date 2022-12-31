@@ -3,3 +3,83 @@
     margin: 0;
     box-sizing: border-box;
   }
+
+  <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); </style>
+
+  body{
+    background-color: red;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .header{
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  max-width: 1000px;
+  margin: auto;
+  height: 400px;
+  }
+
+  .header p{
+    font-size: 25px;
+    font-weight: 600;
+    color: grey;
+  }
+
+  .header a{
+    font-size:80px;
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    font-weight: 800;
+    letter-spacing: -2px;
+    transition: all .4s ease-in-out; 
+  }
+
+ 
+    
+ a:hover { 
+    transform: scale(1.08); 
+    color: rgb(253, 158, 42);
+    }
+
+.videocontainer{
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+  gap: 60px;
+}
+
+iframe{
+  border-radius: 20px;
+  transition: all .5s ease-in-out;
+}
+
+iframe:hover{
+  transform: scale(1.05);   
+}
+
+.footer{
+  /* background-color: red; */
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10vw;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .header a{ font-size: 45px;}
+  .header p{ font-size: 18px;}
+  .header { height: 300px;}
+  .videocontainer { gap: 30px;}
+  iframe { width: 90vw; height: 50vw; border-radius: 10px;}
+}
